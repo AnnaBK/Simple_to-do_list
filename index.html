@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <title>Simple TO-DO App</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>To-Do List</h1>
+      <div class="input-panel">
+        <input type="text" id="taskInput" placeholder="Add New Task" />
+        <button id="add-task-btn">Add Task</button>
+      </div>
+      <div class="filters">
+        <label for="filterByDate">Filter By Date:</label>
+        <select id="filterByDate">
+          <option value="all">Defalt</option>
+          <option value="ascending">Old first</option>
+          <option value="descending">New first</option>
+        </select>
+        <label for="filterByName">Filter By Name:</label>
+        <select id="filterByName">
+          <option value="all">Defalt</option>
+          <option value="ascending">From A to Z</option>
+          <option value="descending">From Z to A</option>
+        </select>
+        <label for="filterByCompletion">Filter By Completion:</label>
+        <select id="filterByCompletion">
+          <option value="all">All</option>
+          <option value="completed">Completed</option>
+          <option value="notCompleted">Not Completed</option>
+        </select>
+      </div>
+      <p id="start-message">There are no new tasks</p>
+      <ul id="taskList"></ul>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
